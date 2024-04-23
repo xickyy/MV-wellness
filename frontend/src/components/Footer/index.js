@@ -23,12 +23,12 @@ const Footer = () => {
           <div className='flex mt-2 flex justify-center'>
             <i className="fas fa-phone text-blue-500 mr-2"></i>
             <p>Call Us For A Free Quote!
-              <a className='text-blue-500 ml-2 custom-footer-number' href='tel:661-202-8255'> 661-202-8255</a>
+              <a className='text-blue-500 ml-2 custom-footer-number' href='tel:661-947-3300'> 661-947-3300</a>
             </p>
           </div>
-          <p className='mt-2'>Tahar Garage Door Services</p>
-          <p>2814 Deerborn Ave.</p>
-          <p className='mb-6'>Palmdale, California</p>
+          <p className='mt-2'>Mountain View Wellness and Family Medical Corporation</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">520 W Palmdale Blvd Q, Palmdale, Ca 93551</a>
+
         </div>
 
         <div className='w-full md:w-1/4 px-4 text-center md:flex md:flex-col'>
@@ -60,17 +60,15 @@ const Footer = () => {
 
         <div className='w-full md:w-1/4 px-4'>
           <h3 className='text-xl custom-footer-hours mt-8 text-center md:mt-0'>Hours Of Operation:</h3>
-          <p className='mt-2 text-center'>Sunday - Thursday:</p>
-          <p className='mt-1 text-green-600 text-center'>6:30am - 7:30pm</p>
-          <p className='mt-2 text-center'>Friday:</p>
-          <p className='mt-1 text-green-600 text-center'>6:30am - 2:30pm</p>
+          <p className='mt-2 text-center'>Monday - Friday:</p>
+          <p className='mt-1 text-green-600 text-center'>9:00am - 5:00pm</p>
           <div className='mt-2'>
-            <p className='mt-1 text-center'>Saturday:</p>
+            <p className='mt-1 text-center'>Saturday - Sunday:</p>
             <p className='text-red-600 text-center'>Closed</p>
           </div>
         </div>
       </div>
-      <Link to='/' id="top" onClick={scrollToTop}><img className='w-24 h-24 mt-4 mx-auto rounded-full border-2 border-black' src={instagram} alt='LOGO'></img></Link>
+      <Link to='/' id="top" onClick={scrollToTop}><img className='w-24 h-24 mt-4 mx-auto rounded-full border-2 border-black' src="LOGO" alt='LOGO'></img></Link>
     </div>
   );
 };

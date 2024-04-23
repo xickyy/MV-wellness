@@ -34,27 +34,27 @@ const Header = () => {
         </Link>
 
         <div>
-            <p className='text-lg xl:text-6xl lg:text-4xl md:text-2xl text-center tahar-header-text mb-4'>Tahar Garage Door Services</p>
+            <p className='text-lg xl:text-6xl lg:text-4xl md:text-2xl text-center tahar-header-text mb-4'>Mountain View Wellness and Family Medical Corporation</p>
 
-          <div className="custom-call-header-scrolly md:hidden">
+          {/* <div className="custom-call-header-scrolly md:hidden">
             <a
               className="w-48 mr-2 ml-2 mb-2 bg-red-600 hover:bg-green-600 text-white py-1 px-4 rounded-3xl inline-block text-center"
               href="tel:661-202-8255"
             >
               Call/Text For A Free Quote! 661-202-8255
             </a>
-          </div>
+          </div> */}
         </div>
 
 
-        <div className="hidden md:flex justify-between py-4 text-center">
+        {/* <div className="hidden md:flex justify-between py-4 text-center">
           <a
             className="w-32 mr-4 ml-2 mb-2 md:my-0 bg-red-600 hover:bg-green-600 text-white py-2 px-4 rounded-lg inline-block"
             href="tel:661-202-8255"
           >
             Call/Text For A Free Quote! 661-202-8255
           </a>
-        </div>
+        </div> */}
         {/* Show the button only on screens the size of a mobile device */}
         <button
           className="md:hidden bg-blue-500 hover:bg-blue-600 h-14 mt-9 text-white px-2 py-1 rounded-lg toggle-button"
