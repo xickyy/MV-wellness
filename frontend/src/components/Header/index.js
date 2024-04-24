@@ -1,6 +1,7 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import logo from "./M.svg";
 
 
 const Header = () => {
@@ -27,35 +28,43 @@ const Header = () => {
 
 
   return (
-    <header className="bg-blue-900 text-white">
+    <header className="bg-white text-black">
       <div className="mx-2 flex items-center justify-between">
-        <Link to="/">
-          <img className="w-32  md:mt-5 rounded-full border-2 border-black mb-2 mt-2" src="logo" alt="LOGO" />
+        <Link className='-mt-4' to="/">
+          <img className="w-40  md:mt-5  mb-2" src={logo} alt="LOGO" />
         </Link>
 
         <div>
-            <p className='text-lg xl:text-6xl lg:text-4xl md:text-2xl text-center tahar-header-text mb-4'>Mountain View Wellness and Family Medical Corporation</p>
-
-          {/* <div className="custom-call-header-scrolly md:hidden">
-            <a
-              className="w-48 mr-2 ml-2 mb-2 bg-red-600 hover:bg-green-600 text-white py-1 px-4 rounded-3xl inline-block text-center"
-              href="tel:661-202-8255"
-            >
-              Call/Text For A Free Quote! 661-202-8255
-            </a>
-          </div> */}
+          <p className='text-lg xl:text-5xl lg:text-4xl md:text-2xl text-center tahar-header-text mb-4'>Mountain View Wellness and Family Medical Corporation</p>
         </div>
 
+        <div>
+          <div className='-mt-10 mb-6'>
+            <p>Contact info will go here -----------</p>
+          </div>
 
-        {/* <div className="hidden md:flex justify-between py-4 text-center">
-          <a
-            className="w-32 mr-4 ml-2 mb-2 md:my-0 bg-red-600 hover:bg-green-600 text-white py-2 px-4 rounded-lg inline-block"
-            href="tel:661-202-8255"
-          >
-            Call/Text For A Free Quote! 661-202-8255
-          </a>
-        </div> */}
-        {/* Show the button only on screens the size of a mobile device */}
+          <nav className="hidden md:block space-x-4 text-center mr-4">
+            <Link className="hover:text-blue-900 custom-nav-css" to="/about">
+              About
+            </Link>
+            <Link className="hover:text-blue-300 custom-nav-css" to="/reviews">
+              Reviews
+            </Link>
+            <Link className="hover:text-blue-300 custom-nav-css" to="/services">
+              Services
+            </Link>
+            <Link className="hover:text-blue-300 custom-nav-css" to="/gallery">
+              Gallery
+            </Link>
+            <Link className="hover:text-blue-300 custom-nav-css" to="/faq">
+              FAQ
+            </Link>
+            <Link className="hover:text-blue-300 custom-nav-css" to="/contact">
+              Contact
+            </Link>
+          </nav>
+        </div>
+
         <button
           className="md:hidden bg-blue-500 hover:bg-blue-600 h-14 mt-9 text-white px-2 py-1 rounded-lg toggle-button"
           onClick={toggleMobileMenu}
@@ -125,27 +134,6 @@ const Header = () => {
           </ul>
         </div>
       )}
-
-      <nav className="hidden md:block space-x-4 text-center">
-        <Link className="hover:text-blue-300 custom-nav-css" to="/about">
-          About Us
-        </Link>
-        <Link className="hover:text-blue-300 custom-nav-css" to="/reviews">
-          Reviews
-        </Link>
-        <Link className="hover:text-blue-300 custom-nav-css" to="/services">
-          Services
-        </Link>
-        <Link className="hover:text-blue-300 custom-nav-css" to="/gallery">
-          Gallery
-        </Link>
-        <Link className="hover:text-blue-300 custom-nav-css" to="/faq">
-          FAQ
-        </Link>
-        <Link className="hover:text-blue-300 custom-nav-css" to="/contact">
-          Contact
-        </Link>
-      </nav>
 
 
 
