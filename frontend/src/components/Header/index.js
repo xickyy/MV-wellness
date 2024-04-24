@@ -30,8 +30,8 @@ const Header = () => {
   return (
     <header className="bg-white text-black">
       <div className="mx-2 flex items-center justify-between">
-        <Link className='-mt-4' to="/">
-          <img className="w-40  md:mt-5  mb-2" src={logo} alt="LOGO" />
+        <Link className='md:-mt-4' to="/">
+          <img className="w-40 mt-2  md:mt-5  mb-2" src={logo} alt="LOGO" />
         </Link>
 
         <div>
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
 
         <div>
-          <div className='-mt-10 mb-6'>
+          <div className='hidden md:flex -mt-10 mb-6'>
             <p>Contact info will go here -----------</p>
           </div>
 
@@ -66,7 +66,7 @@ const Header = () => {
         </div>
 
         <button
-          className="md:hidden bg-blue-500 hover:bg-blue-600 h-14 mt-9 text-white px-2 py-1 rounded-lg toggle-button"
+          className="md:hidden bg-blue-500 hover:bg-blue-600 h-14 text-white px-2 py-1 rounded-lg toggle-button border border-black"
           onClick={toggleMobileMenu}
         >
           {isMobileMenuOpen ? 'Close' : 'Menu'}
