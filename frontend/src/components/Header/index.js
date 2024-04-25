@@ -110,7 +110,7 @@ const Header = () => {
             <li>
               <Link
                 className="hover:text-blue-300"
-                to="/gallery"
+                to="/new-patients"
                 onClick={toggleMobileMenu}
               >
                 New Patients

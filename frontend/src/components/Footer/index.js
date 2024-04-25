@@ -16,25 +16,31 @@ const Footer = () => {
   }
 
   return (
-    <div className='bg-gray-300 text-black py-10'>
+    <div className='bg-gray-300 text-black py-10 custom-footer-container'>
       <div className='container mx-auto flex flex-wrap'>
 
         <div className='w-full md:w-1/4 px-4 text-center'>
           <h3 className='text-xl underline text-center'>Contact info:</h3>
-          <div className='flex mt-2 flex justify-center'>
+          <div className='flex mt-2 mb-2 flex justify-center'>
             <i className="fas fa-phone mr-2"></i>
             <p>Call us if you have questions!
               <a className='text-blue-800 ml-2 custom-footer-number' href='tel:661-947-3300'> 661-947-3300</a>
             </p>
           </div>
-          <p className='mt-2'>Mountain View Wellness and Family Medical Corporation</p>
-          <i className="mr-2 fa-solid fa-location-dot"></i>
-          <a href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">520 W Palmdale Blvd Q, Palmdale, Ca 93551</a>
+
+          <div className='flex custom-footer-addy'>
+            <i className="mr-2 fa-solid fa-location-dot"></i>
+            <div>
+              <a href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">520 W Palmdale Blvd Q, Palmdale, Ca 93551</a>
+            </div>
+          </div>
+
+          <p className='mt-2 mb-8'>Mountain View Wellness and Family Medical Corporation</p>
 
         </div>
 
         <div className='w-full md:w-1/4 px-4 text-center md:flex md:flex-col'>
-          <h3 className='mt-6 text-xl underline'>Social Links</h3>
+          <h3 className=' text-xl underline'>Social Links</h3>
           <div className='flex justify-around items-center md:flex-col md:place-content-center'>
             <a href='https://www.facebook.com/profile.php?id=100053771570764' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={facebook} alt=''></img>
