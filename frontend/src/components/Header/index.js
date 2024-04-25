@@ -39,8 +39,15 @@ const Header = () => {
         </div>
 
         <div>
-          <div className='hidden md:flex mb-4'>
-            <p>Contact info will go here -----------</p>
+          <div className='hidden md:flex mb-4 justify-between'>
+            <div className='flex flex justify-center'>
+              <i className="fas fa-phone mr-2 custom-phone-icon"></i>
+              <a className='text-blue-800 ml-2 custom-footer-number' href='tel:661-947-3300'> (661)-947-3300</a>
+            </div>
+            <div>
+              <i className="ml-2 mr-2 fa-solid fa-location-dot"></i>
+              <a className='mr-2 text-blue-800 font-bold' href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">Get Directions!</a>
+            </div>
           </div>
 
           <nav className="hidden md:block space-x-4 text-center mr-4">
@@ -63,7 +70,7 @@ const Header = () => {
 
           <div className='hidden md:block mb-2'>
             <Link className="mw-48 bg-blue-200 mt-4 custom-new-patient" to="/new-patients">
-                New Patients
+              New Patients
             </Link>
           </div>
         </div>

@@ -27,6 +27,10 @@
   color: green;
 }
 
+.custom-footer-number {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .custom-footer-link {
   transition: 1s;
 }
@@ -34,4 +38,8 @@
 .custom-footer-link:hover {
   padding-left: 20px;
   color: rgb(208, 228, 255);
+}
+
+.custom-phone-icon {
+  margin-top: 4px;
 }

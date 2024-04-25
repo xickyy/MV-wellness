@@ -22,9 +22,9 @@ const Footer = () => {
         <div className='w-full md:w-1/4 px-4 text-center'>
           <h3 className='text-xl underline text-center'>Contact info:</h3>
           <div className='flex mt-2 mb-2 flex justify-center'>
-            <i className="fas fa-phone mr-2"></i>
+            <i className="fas fa-phone mr-2 custom-phone-icon"></i>
             <p>Call us if you have questions!
-              <a className='text-blue-800 ml-2 custom-footer-number' href='tel:661-947-3300'> 661-947-3300</a>
+              <a className='text-blue-800 ml-2 custom-footer-number' href='tel:661-947-3300'> (661)-947-3300</a>
             </p>
           </div>
 
