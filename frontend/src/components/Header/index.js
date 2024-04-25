@@ -28,7 +28,7 @@ const Header = () => {
 
 
   return (
-    <header className="bg-white text-black">
+    <header className="bg-white text-black border-b-2 border-black">
       <div className="mx-2 flex items-center justify-between">
         <Link className='md:-mt-4' to="/">
           <img className="w-40 mt-2  md:mt-5  mb-2" src={logo} alt="LOGO" />
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
 
         <div>
-          <div className='hidden md:flex -mt-10 mb-6'>
+          <div className='hidden md:flex mb-4'>
             <p>Contact info will go here -----------</p>
           </div>
 
@@ -53,9 +53,6 @@ const Header = () => {
             <Link className="hover:text-blue-300 custom-nav-css" to="/services">
               Services
             </Link>
-            <Link className="hover:text-blue-300 custom-nav-css" to="/gallery">
-              Gallery
-            </Link>
             <Link className="hover:text-blue-300 custom-nav-css" to="/faq">
               FAQ
             </Link>
@@ -63,10 +60,16 @@ const Header = () => {
               Contact
             </Link>
           </nav>
+
+          <div className='hidden md:block mb-2'>
+            <Link className="mw-48 bg-blue-200 mt-4 custom-new-patient" to="/new-patients">
+                New Patients
+            </Link>
+          </div>
         </div>
 
         <button
-          className="md:hidden bg-blue-500 hover:bg-blue-600 h-14 text-white px-2 py-1 rounded-lg toggle-button border border-black"
+          className="md:hidden bg-blue-800 h-14 text-white px-2 py-1 rounded-lg toggle-button border border-black"
           onClick={toggleMobileMenu}
         >
           {isMobileMenuOpen ? 'Close' : 'Menu'}
@@ -75,7 +78,7 @@ const Header = () => {
 
       {/* Show the mobile menu on screens the size of a mobile device */}
       {isMobileMenuOpen && (
-        <div className=" bg-blue-400 container mx-auto py-4 text-center custom-menu-slide">
+        <div className=" bg-blue-800 container mx-auto py-4 text-center custom-menu-slide">
           <ul className="space-y-2">
             <li>
               <Link
@@ -110,7 +113,7 @@ const Header = () => {
                 to="/gallery"
                 onClick={toggleMobileMenu}
               >
-                Gallery
+                New Patients
               </Link>
             </li>
             <li>
