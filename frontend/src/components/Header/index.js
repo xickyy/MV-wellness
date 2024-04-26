@@ -40,30 +40,34 @@ const Header = () => {
 
         <div>
           <div className='hidden md:flex mb-4 justify-between'>
-            <div className='flex flex justify-center'>
-              <i className="fas fa-phone mr-2 custom-phone-icon"></i>
-              <a className='text-blue-800 ml-2 custom-footer-number' href='tel:661-947-3300'> (661)-947-3300</a>
+            <div className='flex flex justify-center custom-header-directions'>
+              <a className='text-blue-800 ml-2 pr-2 custom-footer-number' href='tel:661-947-3300'>
+                <i className="fas fa-phone mr-2 custom-phone-icon text-black"></i>
+                (661)-947-3300
+              </a>
             </div>
-            <div>
-              <i className="ml-2 mr-2 fa-solid fa-location-dot"></i>
-              <a className='mr-2 text-blue-800 font-bold' href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">Get Directions!</a>
+            <div className='custom-header-directions'>
+              <a className='mr-2 text-blue-800 font-bold custom-header-directions-text' href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">
+              <i className="ml-2 mr-2 fa-solid fa-location-dot text-black"></i>
+                Get Directions!
+              </a>
             </div>
           </div>
 
-          <nav className="hidden md:block space-x-4 text-center mr-4">
-            <Link className="hover:text-blue-900 custom-nav-css" to="/about">
+          <nav className="hidden md:block text-center mr-4">
+            <Link className="custom-nav-css" to="/about">
               About
             </Link>
-            <Link className="hover:text-blue-300 custom-nav-css" to="/reviews">
+            <Link className=" custom-nav-css" to="/reviews">
               Reviews
             </Link>
-            <Link className="hover:text-blue-300 custom-nav-css" to="/services">
+            <Link className=" custom-nav-css" to="/services">
               Services
             </Link>
-            <Link className="hover:text-blue-300 custom-nav-css" to="/faq">
+            <Link className=" custom-nav-css" to="/faq">
               FAQ
             </Link>
-            <Link className="hover:text-blue-300 custom-nav-css" to="/contact">
+            <Link className=" custom-nav-css" to="/contact">
               Contact
             </Link>
           </nav>

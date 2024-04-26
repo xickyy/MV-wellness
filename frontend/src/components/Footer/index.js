@@ -24,7 +24,7 @@ const Footer = () => {
           <div className='flex mt-2 mb-2 flex justify-center'>
             <i className="fas fa-phone mr-2 custom-phone-icon"></i>
             <p>Call us if you have questions!
-              <a className='text-blue-800 ml-2 custom-footer-number' href='tel:661-947-3300'> (661)-947-3300</a>
+              <a className='text-blue-800 custom-footer-number footer-num-2' href='tel:661-947-3300'> (661)-947-3300</a>
             </p>
           </div>
 
@@ -57,10 +57,10 @@ const Footer = () => {
         <div className='w-full md:w-1/4 px-4'>
           <h3 className='text-xl underline text-center mt-6 md:mt-0'>Quick Links:</h3>
           <div className='flex justify-around md:flex-col md:text-center'>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/reviews'>Reviews</Link>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/services'>Services</Link>
             <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/about'>About</Link>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/gallery'>Gallery</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/reviews'>Reviews</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/gallery'>New Patients</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/services'>Services</Link>
             <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/faq'>FAQ</Link>
             <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/contact'>Contact</Link>
           </div>

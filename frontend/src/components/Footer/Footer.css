@@ -24,7 +24,7 @@
 }
 
 .custom-footer-number:hover {
-  color: green;
+  color: rgb(60, 255, 0);
 }
 
 .custom-footer-number {
@@ -37,9 +37,24 @@
 
 .custom-footer-link:hover {
   padding-left: 20px;
-  color: rgb(208, 228, 255);
+  color: rgb(0, 0, 0);
 }
 
 .custom-phone-icon {
   margin-top: 4px;
+}
+
+.footer-num-2 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 3px;
+  border: solid rgba(255, 255, 255, 0) 1px;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.footer-num-2:hover {
+  background-color: #224dac;
+  border: solid black 1px;
+  box-shadow: black 1px 1px 4px 1px;
 }
