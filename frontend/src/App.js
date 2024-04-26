@@ -8,6 +8,9 @@ import Homepage from './components/Homepage';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import NewPatients from './components/NewPatients';
+import About from './components/About';
+import Reviews from './components/Reviews';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/FAQ' element={<FAQ />} />
           <Route exact path='/new-patients' element={<NewPatients />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/reviews' element={<Reviews />} />
+          <Route exact path='/services' element={<Services />} />
 
         </Routes>
 
