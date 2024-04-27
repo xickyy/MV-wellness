@@ -35,7 +35,7 @@ const Header = () => {
         </Link>
 
         <div>
-          <p className='text-lg xl:text-5xl lg:text-4xl md:text-2xl text-center tahar-header-text mb-4'>Mountain View Wellness and Family Medical Corporation</p>
+          <p className='text-lg xl:text-5xl lg:text-4xl md:text-2xl text-center mb-4 custom-header-title'>Mountain View Wellness and Family Medical Corporation</p>
         </div>
 
         <div>

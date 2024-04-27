@@ -77,3 +77,7 @@
   font-weight: 100;
   color: rgb(60, 255, 0);
 }
+
+.custom-header-title {
+  margin-top: 10px;
+}

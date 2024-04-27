@@ -1,0 +1,10 @@
+.custom-doc-img {
+  border-radius: 30px;
+  box-shadow: black 1px 1px 4px 2px;
+}
+
+.doctor-about-text {
+  box-shadow: black 1px 1px 3px 1px;
+  margin-top: -20px;
+  /* border-radius: 10px; */
+}
