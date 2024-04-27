@@ -1,7 +1,6 @@
 .custom-footer-container {
-  position: relative;
   width: 100%;
-  bottom: 0px;
+  height: 300px;
 }
 
 .custom-footer-addy {
@@ -57,4 +56,34 @@
   background-color: #224dac;
   border: solid black 1px;
   box-shadow: black 1px 1px 4px 1px;
+}
+
+.footer-logo {
+  box-shadow: black 0px 0px 5px 2px;
+}
+
+@media screen and (min-width: 416px) and (max-width: 1075px) {
+  .footer-logo {
+    position: relative;
+    object-position: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -175px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .custom-footer-container {
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .footer-logo {
+    position: relative;
+    object-position: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -175px;
+  }
 }
