@@ -8,13 +8,11 @@
   background-color: #224eac27;
   font-weight: bold;
   color: rgb(0, 0, 0);
-
 }
 
 .about-img-container {
   display: flex;
   justify-content: center;
-  /* background-color: rgba(240, 248, 255, 0.733); */
   border-radius: 30px;
 }
 
@@ -38,4 +36,18 @@
   background-color: rgba(240, 248, 255, 0.842);
   border-radius: 30px;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-card-container {
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+
+  .about-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
