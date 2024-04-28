@@ -1,3 +1,5 @@
+import React, { useRef, useEffect } from 'react';
+
 import './About.css';
 import doc from './images/theDoctor.jpg';
 import mom from './images/theProvider.jpg';
@@ -5,11 +7,21 @@ import background from './images/bg.mp4';
 import test from './images/test.mp4';
 
 const About = () => {
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // Set playback speed to 0.5x slower
+    }
+  }, []);
+
+
   return (
     <div className='about-page-container'>
 
       <div className=' about-bg-container'>
-        <video id='myVideo' muted autoPlay loop className='about-background'>
+        <video id='myVideo' ref={videoRef} muted autoPlay loop className='about-background'>
           <source src={test}></source>
         </video>
       </div>
