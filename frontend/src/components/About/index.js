@@ -2,14 +2,15 @@ import './About.css';
 import doc from './images/theDoctor.jpg';
 import mom from './images/theProvider.jpg';
 import background from './images/bg.mp4';
+import test from './images/test.mp4';
 
 const About = () => {
   return (
     <div className='about-page-container'>
 
-      <div className='hidden md:block about-bg-container'>
+      <div className=' about-bg-container'>
         <video id='myVideo' muted autoPlay loop className='about-background'>
-          <source src={background}></source>
+          <source src={test}></source>
         </video>
       </div>
 
