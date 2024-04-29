@@ -4,3 +4,10 @@
   object-fit: cover;
   object-position: 50% 37%;
 }
+
+.google-map-homepage {
+  margin-bottom: 3px;
+  margin-top: 3px;
+  box-shadow: black 0px 0px 4px 2px;
+  /* border-bottom: solid black 1px; */
+}
