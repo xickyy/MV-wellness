@@ -1,5 +1,5 @@
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import logo from "./M.svg";
 
@@ -24,7 +24,22 @@ const Header = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
+
   }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update active link when location changes
+    const links = document.querySelectorAll('.active-nav');
+    links.forEach(link => {
+        if (link.getAttribute('href') === location.pathname) {
+            link.classList.add('active')
+        } else {
+          link.classList.remove('active')
+        }
+    });
+}, [location.pathname]);
 
 
   return (
@@ -48,26 +63,26 @@ const Header = () => {
             </div>
             <div className='custom-header-directions'>
               <a className='mr-2 text-blue-800 font-bold custom-header-directions-text' href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">
-              <i className="ml-2 mr-2 fa-solid fa-location-dot text-black"></i>
+                <i className="ml-2 mr-2 fa-solid fa-location-dot text-black"></i>
                 Get Directions!
               </a>
             </div>
           </div>
 
           <nav className="hidden md:block text-center mr-4">
-            <Link className="custom-nav-css" to="/about">
+            <Link className="active-nav custom-nav-css" to="/about">
               About
             </Link>
-            <Link className=" custom-nav-css" to="/reviews">
+            <Link className="active-nav custom-nav-css" to="/reviews">
               Reviews
             </Link>
-            <Link className=" custom-nav-css" to="/services">
+            <Link className="active-nav custom-nav-css" to="/services">
               Services
             </Link>
-            <Link className=" custom-nav-css" to="/faq">
+            <Link className="active-nav custom-nav-css" to="/faq">
               FAQ
             </Link>
-            <Link className=" custom-nav-css" to="/contact">
+            <Link className="active-nav custom-nav-css" to="/contact">
               Contact
             </Link>
           </nav>

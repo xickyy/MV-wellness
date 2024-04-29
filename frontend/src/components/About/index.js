@@ -3,8 +3,7 @@ import React, { useRef, useEffect } from 'react';
 import './About.css';
 import doc from './images/theDoctor.jpg';
 import mom from './images/theProvider.jpg';
-import background from './images/bg.mp4';
-import test from './images/test.mp4';
+import bg from './images/test.mp4';
 
 const About = () => {
 
@@ -22,7 +21,7 @@ const About = () => {
 
       <div className=' about-bg-container'>
         <video id='myVideo' ref={videoRef} muted autoPlay loop className='about-background'>
-          <source src={test}></source>
+          <source src={bg}></source>
         </video>
       </div>
 

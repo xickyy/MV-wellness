@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 // Google Maps API key (replace 'YOUR_API_KEY' with your actual API key)
 const GOOGLE_MAPS_API_KEY = 'AIzaSyCjSXNAi8GFCToY1e9tlKg2GaYb8KUSf9U';
 
 const GoogleMap = () => {
-  const [map, setMap] = useState(null);
+  // const [map, setMap] = useState(null);
 
   useEffect(() => {
     // Load the Google Maps API script dynamically
@@ -25,13 +25,13 @@ const GoogleMap = () => {
       center: { lat: 34.5835789, lng: -118.1404100 }, // Replace with your location coordinates
     };
     const mapInstance = new window.google.maps.Map(document.getElementById('map'), mapOptions);
-    setMap(mapInstance);
+    // setMap(mapInstance);
 
     // Add a marker to the map
     const marker = new window.google.maps.Marker({
       position: { lat: 34.5835789, lng: -118.1404100 }, // Replace with your location coordinates
       map: mapInstance,
-      title: 'Your Location',
+      title: 'Mountain View Wellness and Family Medical Corporation',
     });
 
     // Add a click event listener to the marker
