@@ -23,8 +23,8 @@ const Services = () => {
           <p className='services-link-title'>Mens Health</p>
         </Link>
 
-        <Link to='/services/screening' className='service-links' id='service-screenings'>
-          <p className='services-link-title'>Screenings</p>
+        <Link to='/services/std-screening' className='service-links' id='service-std-screenings'>
+          <p className='services-link-title'>STI / STD Screenings</p>
         </Link>
 
         <Link to='/services/walk-ins' className='service-links' id='service-walk-in'>
@@ -52,11 +52,27 @@ const Services = () => {
         </Link>
 
         <Link to='/services/fee-for-service' className='service-links' id='service-cash-patients'>
-          <p className='services-link-title'>Cash Patients</p>
+          <p className='services-link-title'>No insurance</p>
         </Link>
 
         <Link to='/services/lipo-c' className='service-links' id='service-lipo-c'>
-          <p className='services-link-title'>Lipo-C Injections</p>
+          <p className='services-link-title'>Weight loss</p>
+        </Link>
+
+        <Link to='/services/male-ed' className='service-links' id='male-erectile-dysfunction'>
+          <p className='services-link-title'>Male Erectile Dysfunction</p>
+        </Link>
+
+        <Link to='/services/birth-control' className='service-links' id='service-birth-control'>
+          <p className='services-link-title'>Birth Control</p>
+        </Link>
+
+        <Link to='/services/pregnancy' className='service-links' id='service-pregnancy'>
+          <p className='services-link-title'>pregnancy confirmation</p>
+        </Link>
+
+        <Link to='/services/immigration-physical' className='service-links' id='service-immigration-physical'>
+          <p className='services-link-title'>immigration-physical</p>
         </Link>
       </div>
 

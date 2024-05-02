@@ -31,7 +31,7 @@
   }
 
   .services-link-title {
-    background-color: #224dac;
+    background-color: #224eacd7;
     border: black solid 1px;
     border-radius: 10px;
     color: white;
@@ -42,32 +42,34 @@
   /* service link background ids */
 
 #service-primary-care {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/primary-health.jpeg');
   background-size: cover;
 }
 
 #service-womens-health {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/female.jpeg');
   background-size: cover;
 }
 
 #service-mens-health {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/male.jpeg');
   background-size: cover;
+  background-size: 110%;
+  background-position: center;
 }
 
-#service-screenings {
-  background-image: url('./images/botox.jpeg');
+#service-std-screenings {
+  background-image: url('./images/blood-sample.jpeg');
   background-size: cover;
 }
 
 #service-walk-in {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/walk-ins.jpeg');
   background-size: cover;
 }
 
 #service-telehealth {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/telehealth.jpeg');
   background-size: cover;
 }
 
@@ -77,29 +79,52 @@
 }
 
 #service-sick-visits {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/sick.jpeg');
   background-size: cover;
 }
 
 #service-fpact {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/vaginal-health.jpeg');
   background-size: cover;
 }
 
 #service-every-woman-counts {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/beast-cancer.jpeg');
   background-size: cover;
 }
 
 #service-cash-patients {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/no-problem.jpeg');
   background-size: cover;
 }
 
 #service-lipo-c {
-  background-image: url('./images/botox.jpeg');
+  background-image: url('./images/weight-loss.jpeg');
   background-size: cover;
 }
+
+#male-erectile-dysfunction {
+  background-image: url('./images/male-ed.jpeg');
+  background-size: cover;
+}
+
+#service-birth-control {
+  background-image: url('./images/birth-control.jpeg');
+  background-size: cover;
+}
+
+#service-pregnancy {
+  background-image: url('./images/pregnancy-test.jpeg');
+  background-size: cover;
+  background-size: 200%;
+  background-position: center;
+}
+
+#service-immigration-physical {
+  background-image: url('./images/immigration-physical.jpeg');
+  background-size: cover;
+}
+
 }
 
 @media screen and (max-width: 416px) {
