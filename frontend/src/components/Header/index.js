@@ -88,7 +88,7 @@ const Header = () => {
           </nav>
 
           <div className='hidden md:block mb-2'>
-            <Link className="mw-48 bg-blue-200 mt-4 custom-new-patient" to="/new-patients">
+            <Link className="mw-48 mt-4 custom-new-patient" to="/new-patients">
               New Patients
             </Link>
           </div>

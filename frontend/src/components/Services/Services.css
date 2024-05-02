@@ -1,0 +1,125 @@
+.services-page-container {
+  background-image: url('./images/bg.jpeg');
+  background-size: cover;
+  border-bottom: black solid 2px;
+}
+
+.services-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Adjust the minmax value as needed */
+  gap: 15px;
+  /* Adjust the gap between squares */
+  max-width: 1000px;
+  /* Adjust the maximum width of the grid */
+  margin: auto;
+  /* Center the grid */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 416px) {
+  .service-links {
+    padding: 20px;
+    /* Adjust the padding */
+    text-align: center;
+    /* Center the content */
+    text-decoration: none;
+    /* Remove default underline */
+    height: 150px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .service-links {
+    padding: 20px;
+    /* Adjust the padding */
+    text-align: center;
+    /* Center the content */
+    text-decoration: none;
+    /* Remove default underline */
+  }
+}
+
+.service-links {
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 4px 1px;
+}
+
+.service-links:hover {
+  box-shadow: green 0px 0px 4px 1px;
+}
+
+.services-link-title {
+  background-color: #224dac;
+  border: black solid 1px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: underline;
+  box-shadow: black 0px 0px 4px 1px;
+}
+
+
+/* service link background ids */
+
+#service-primary-care {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-womens-health {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-mens-health {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-screenings {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-walk-in {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-telehealth {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-aesthetics {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-sick-visits {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-fpact {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-every-woman-counts {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-cash-patients {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
+
+#service-lipo-c {
+  background-image: url('./images/botox.jpeg');
+  background-size: cover;
+}
