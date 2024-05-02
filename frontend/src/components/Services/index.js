@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className='services-page-container'>
 
-      <p className='text-3xl text-center p-4'>Our Services</p>
+      <p className='text-3xl font-bold text-center p-4'>Our Services</p>
 
       <div className='services-grid-container pb-4'>
         <Link to='/services/primary-care' className='service-links' id='service-primary-care'>

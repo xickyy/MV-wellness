@@ -29,40 +29,17 @@
     height: 150px;
     width: auto;
   }
-}
 
-@media screen and (max-width: 416px) {
-  .service-links {
-    padding: 20px;
-    /* Adjust the padding */
-    text-align: center;
-    /* Center the content */
-    text-decoration: none;
-    /* Remove default underline */
+  .services-link-title {
+    background-color: #224dac;
+    border: black solid 1px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: underline;
+    box-shadow: black 0px 0px 4px 1px;
   }
-}
 
-.service-links {
-  border: black solid 1px;
-  border-radius: 10px;
-  box-shadow: black 0px 0px 4px 1px;
-}
-
-.service-links:hover {
-  box-shadow: green 0px 0px 4px 1px;
-}
-
-.services-link-title {
-  background-color: #224dac;
-  border: black solid 1px;
-  border-radius: 10px;
-  color: white;
-  text-decoration: underline;
-  box-shadow: black 0px 0px 4px 1px;
-}
-
-
-/* service link background ids */
+  /* service link background ids */
 
 #service-primary-care {
   background-image: url('./images/botox.jpeg');
@@ -122,4 +99,29 @@
 #service-lipo-c {
   background-image: url('./images/botox.jpeg');
   background-size: cover;
+}
+}
+
+@media screen and (max-width: 416px) {
+  .service-links {
+    padding: 15px;
+    /* Adjust the padding */
+    text-align: center;
+    /* Center the content */
+    text-decoration: none;
+    /* Remove default underline */
+    background-color: #224dac;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.service-links {
+  border: black solid 1px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 4px 1px;
+}
+
+.service-links:hover {
+  box-shadow: green 0px 0px 4px 1px;
 }
