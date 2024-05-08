@@ -1,15 +1,14 @@
 import './Reviews.css';
 
+import ReviewsApi from '../ReviewsApi';
 
 
 const Reviews = () => {
   return (
     <div>
 
-      <h2>Reviews Page</h2>
-
       <div>
-
+        <ReviewsApi />
       </div>
 
     </div>
