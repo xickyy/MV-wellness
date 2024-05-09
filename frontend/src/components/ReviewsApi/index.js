@@ -44,21 +44,23 @@ const ReviewsApi = () => {
     return stars;
   };
 
-  console.log('reviews',reviews)
+  console.log('reviews', reviews)
 
   return (
-    <div className="md:w-full xl:w-full bg-blue-900 rounded-t-2xl p-2 custom-api-review-size">
+    <div className="md:w-full xl:w-full bg-blue-900  p-2 custom-api-review-size">
       <h3 className='text-blue-200 text-3xl underline mb-4 text-center'>Recent Reviews</h3>
       <ul className='md:max-h-screen xl:max-h-full custom-large-overflow'>
         {reviews.map((review, index) => (
           <li key={index} className="review-api ">
+            <div className='flex'>
+              <p className="review-author-api pr-2">- {review.author_name}</p>
+              <p className="review-rating-api">
+                Rating: {renderStars(review.rating)}
+              </p>
+            </div>
             <p>{review.text}</p>
             <div className='flex justify-between'>
               <div>
-                <p className="review-rating-api">
-                  Rating: {renderStars(review.rating)}
-                </p>
-                <p className="review-author-api">By: {review.author_name}</p>
               </div>
               <a
                 href={`https://www.google.com/maps/place/Tahar+Garage+Door+Repair+Services/@34.5989272,-118.1815931,17z/data=!3m1!4b1!4m6!3m5!1s0x80c259d77e3936f1:0xacaf1a48ea067316!8m2!3d34.5989272!4d-118.1815931!16s%2Fg%2F11jwjffm8q?entry=ttu`}
@@ -71,6 +73,9 @@ const ReviewsApi = () => {
           </li>
         ))}
       </ul>
+      <div className='flex justify-center mb-4'>
+        <a className='view-all-reviews-button' href='https://www.google.com/maps/place/Mountain+View+Wellness+and+Family+Medical+Corporation/@34.5835745,-118.140039,17z/data=!4m8!3m7!1s0x80c2593aa5e9ecd5:0xe0bf4e09ace3a629!8m2!3d34.5835745!4d-118.140039!9m1!1b1!16s%2Fg%2F11vz5lv3v6?entry=ttu' target='blank'>Click Here To View All Reviews Or Leave A Review</a>
+      </div>
       {/* <Link className='bg-blue-200 flex justify-center text-xl hover:bg-green-600' to='/reviews'> View All Reviews</Link> */}
     </div>
 

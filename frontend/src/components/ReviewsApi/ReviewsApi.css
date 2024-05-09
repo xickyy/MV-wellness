@@ -50,17 +50,33 @@
   }
 } */
 
-@media screen and (min-width: 724px) {
+/* @media screen and (min-width: 724px) {
   .custom-large-overflow {
     overflow-y: scroll;
     min-height:325px;
     max-height: 685px;
     min-width: 300px;
   }
-}
+} */
 
 @media screen and (min-width: 1284px) {
   .custom-api-review-size {
     max-height: min-content;
   }
+}
+
+.view-all-reviews-button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 4px 2px;
+  transition: .5s;
+}
+
+.view-all-reviews-button:hover {
+  background-color: #224dac;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: white 0px 0px 4px 2px;
 }
