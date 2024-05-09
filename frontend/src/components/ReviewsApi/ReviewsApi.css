@@ -16,6 +16,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fff;
+  box-shadow: black 0px 0px 4px 2px;
 }
 
 
@@ -66,7 +67,7 @@
 }
 
 .view-all-reviews-button {
-  background-color: white;
+  background-color: #b2cbff;
   padding: 10px;
   border-radius: 10px;
   box-shadow: black 0px 0px 4px 2px;
@@ -79,4 +80,8 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: white 0px 0px 4px 2px;
+}
+
+.custom-api-review-size {
+  background-color: #224dac;
 }

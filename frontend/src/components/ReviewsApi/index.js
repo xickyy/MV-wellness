@@ -47,7 +47,7 @@ const ReviewsApi = () => {
   console.log('reviews', reviews)
 
   return (
-    <div className="md:w-full xl:w-full bg-blue-900  p-2 custom-api-review-size">
+    <div className="md:w-full xl:w-full  p-2 custom-api-review-size">
       <h3 className='text-blue-200 text-3xl underline mb-4 text-center'>Recent Reviews</h3>
       <ul className='md:max-h-screen xl:max-h-full custom-large-overflow'>
         {reviews.map((review, index) => (
