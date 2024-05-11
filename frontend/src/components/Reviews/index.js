@@ -1,6 +1,7 @@
 import './Reviews.css';
 
 import ReviewsApi from '../ReviewsApi';
+import stars from './stars.jpeg'
 
 
 const Reviews = () => {
@@ -10,6 +11,8 @@ const Reviews = () => {
       <div>
         <ReviewsApi />
       </div>
+
+      <img className='stars-img' src={stars} alt='reviews'></img>
 
     </div>
   );
