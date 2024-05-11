@@ -11,6 +11,7 @@ import NewPatients from './components/NewPatients';
 import About from './components/About';
 import Reviews from './components/Reviews';
 import Services from './components/Services';
+import MensHealth from './components/MensHealth';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route exact path='/about' element={<About />} />
           <Route exact path='/reviews' element={<Reviews />} />
           <Route exact path='/services' element={<Services />} />
+          <Route exact path='/services/mens-health' element={<MensHealth />} />
 
         </Routes>
 
