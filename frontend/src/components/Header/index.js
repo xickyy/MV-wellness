@@ -62,7 +62,7 @@ const Header = () => {
               </a>
             </div>
             <div className='custom-header-directions'>
-              <a className='mr-2 text-blue-800 font-bold custom-header-directions-text' href="https://www.google.com/maps/search/?api=1&query=520 W Palmdale Blvd Q, Palmdale, Ca 93551" target="_blank" rel="noreferrer">
+              <a className='mr-2 text-blue-800 font-bold custom-header-directions-text' href="https://www.google.com/maps/dir/?api=1&destination=34.5835789,-118.1404100" target="_blank" rel="noreferrer">
                 <i className="ml-2 mr-2 fa-solid fa-location-dot text-black"></i>
                 Get Directions!
               </a>
