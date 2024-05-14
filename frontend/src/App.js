@@ -13,6 +13,8 @@ import Reviews from './components/Reviews';
 import Services from './components/Services';
 import MensHealth from './components/Services/MensHealth';
 import PrimaryCare from './components/Services/PrimaryCare';
+import WomensHealth from './components/Services/WomensHealth';
+import StdScreen from './components/Services/StdScreen';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route exact path='/services' element={<Services />} />
           <Route exact path='/services/mens-health' element={<MensHealth />} />
           <Route exact path='/services/primary-care' element={<PrimaryCare />} />
+          <Route exact path='/services/womens-health' element={<WomensHealth />} />
+          <Route exact path='/services/std-screening' element={<StdScreen />} />
 
         </Routes>
 
