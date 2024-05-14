@@ -15,6 +15,7 @@ import MensHealth from './components/Services/MensHealth';
 import PrimaryCare from './components/Services/PrimaryCare';
 import WomensHealth from './components/Services/WomensHealth';
 import StdScreen from './components/Services/StdScreen';
+import WalkIns from './components/Services/WalkIns';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route exact path='/services/primary-care' element={<PrimaryCare />} />
           <Route exact path='/services/womens-health' element={<WomensHealth />} />
           <Route exact path='/services/std-screening' element={<StdScreen />} />
+          <Route exact path='/services/walk-ins' element={<WalkIns />} />
 
         </Routes>
 
