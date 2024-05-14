@@ -1,7 +1,7 @@
 .mens-health-img {
   width: 30vw;
   height: 25vw;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-bottom: 10px;
   border-radius: 10px;
   box-shadow: grey 1px 1px 4px 2px;
@@ -15,14 +15,4 @@
   margin-bottom: 10px;
 }
 
-/* @media (max-width: 1615px) {
-  .custom-while-genetics {
-    position: absolute;
-    width: 98vw;
-    padding-right: 35px;
-  }
 
-  .custom-we-collab {
-    margin-top: 125px;
-  }
-} */

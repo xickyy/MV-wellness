@@ -4,9 +4,9 @@ import men from "./mensHealthImg.jpeg"
 
 const MensHealth = () => {
   return (
-    <div>
+    <div className='service-background-gradient'>
 
-      <p className='text-center text-4xl mt-8 underline'>Mens health</p>
+      <p className='text-center text-4xl pt-8 underline'>Mens health</p>
 
       <div className='text-2xl p-4 md:p-8'>
 

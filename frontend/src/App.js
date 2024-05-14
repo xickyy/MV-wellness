@@ -12,6 +12,7 @@ import About from './components/About';
 import Reviews from './components/Reviews';
 import Services from './components/Services';
 import MensHealth from './components/Services/MensHealth';
+import PrimaryCare from './components/Services/PrimaryCare';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route exact path='/reviews' element={<Reviews />} />
           <Route exact path='/services' element={<Services />} />
           <Route exact path='/services/mens-health' element={<MensHealth />} />
+          <Route exact path='/services/primary-care' element={<PrimaryCare />} />
 
         </Routes>
 
