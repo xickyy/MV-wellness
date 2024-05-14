@@ -11,7 +11,7 @@ import NewPatients from './components/NewPatients';
 import About from './components/About';
 import Reviews from './components/Reviews';
 import Services from './components/Services';
-import MensHealth from './components/MensHealth';
+import MensHealth from './components/Services/MensHealth';
 
 function App() {
   return (
