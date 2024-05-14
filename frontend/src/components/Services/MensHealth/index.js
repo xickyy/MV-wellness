@@ -8,7 +8,7 @@ const MensHealth = () => {
 
       <p className='text-center text-4xl mt-8 underline'>Mens health</p>
 
-      <div className='text-2xl p-8'>
+      <div className='text-2xl p-4 md:p-8'>
 
         <p className='indent-8'>
           Men often shy away from discussing their health concerns, including with their doctors. Delaying check-ups and preventive measures can allow underlying conditions to worsen
@@ -18,15 +18,15 @@ const MensHealth = () => {
 
         <div className='flex w-full'>
           <div>
-            <div className='flex justify-around'>
-              <ul className='list-disc ml-24 py-8'>
+            <div className='flex justify-around px-4 md:px-0'>
+              <ul className='list-disc md:ml-24 py-8'>
                 <li>Liver disease</li>
                 <li>Lung disease</li>
                 <li>Colon cancer</li>
                 <li>Erectile Disfunction</li>
                 <li>high blood pressure</li>
               </ul>
-              <ul className='list-disc ml-24 py-8' >
+              <ul className='list-disc md:ml-24 py-8' >
                 <li>stroke</li>
                 <li>heart disease</li>
                 <li>low testosterone</li>
@@ -50,9 +50,11 @@ const MensHealth = () => {
             </div>
           </div>
 
-          <img className='mens-health-img' src={men} alt=''></img>
+          <img className='hidden md:block mens-health-img' src={men} alt=''></img>
 
         </div>
+
+        <img className='md:hidden mens-health-mobile-style' src={men} alt=''></img>
 
 
         <p className='mb-4 indent-8'>
