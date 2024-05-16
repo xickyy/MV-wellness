@@ -8,3 +8,30 @@
 .google-map-homepage {
   border-top: solid black 2px;
 }
+
+.home-welcome-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animated-word {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.animated-word.fade-out {
+  opacity: 0;
+}
+
+.home-welcome-message-container {
+  background-color: rgba(255, 255, 255, 0.637);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.596) 1px 1px 3px 2px;
+}
+
+.home-text-outline {
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
