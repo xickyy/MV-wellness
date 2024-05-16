@@ -7,11 +7,11 @@ import GoogleMap from '../GoogleMap';
 
 const Homepage = () => {
 
-  const [word, setWord] = useState('springs');
+  const [word, setWord] = useState("We Accept Walk-in's!");
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const words = ["We Accept Walk-in's!", 'Other stuff!'];
+    const words = ["We Accept Walk-in's!", 'Other stuff!', 'Lots And Lots of Stuff!'];
     let index = 1;
 
     const timer = setInterval(() => {
