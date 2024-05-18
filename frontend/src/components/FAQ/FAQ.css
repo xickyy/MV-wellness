@@ -1,6 +1,7 @@
 .FAQ-container {
   background-image: url('./FAQbg.jpeg');
   background-size: cover;
-  background-position: center bottom; /* Adjusted */
+  background-position: center bottom;
+  background-attachment: fixed; /* Added to fix the background image */
   border-bottom: black solid 2px;
 }

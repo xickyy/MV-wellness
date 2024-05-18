@@ -11,7 +11,7 @@ const Homepage = () => {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const words = ["We Accept Walk-in's!", 'Other stuff!', 'Lots And Lots of Stuff!'];
+    const words = ["We Accept Walk-in's!", 'No Insurance No Problem!', 'We Do Select Aesthetics!', 'Sick Visits For Children!', 'Weight Loss Programs!'];
     let index = 1;
 
     const timer = setInterval(() => {
@@ -30,9 +30,9 @@ const Homepage = () => {
     <div>
 
       <div className='home-welcome-text home-welcome-message-container text-center mt-12 w-64 md:mt-24 md:w-3/6'>
-        <p className='text-4xl md:text-6xl mt-6 md:mt-8 home-welcome-text home-text-outline'>Welcome!</p>
+        <p className='text-4xl md:text-6xl mt-6 md:mt-8 pt-2 home-welcome-text home-text-outline'>Welcome!</p>
 
-        <span className={`text-xl md:text-4xl mt-12 md:mt-16 animated-word home-text-outline ${fadeOut ? 'fade-out' : ''}`}>
+        <span className={`text-xl md:text-4xl mt-12 md:mt-16 pb-2 animated-word home-text-outline ${fadeOut ? 'fade-out' : ''}`}>
             {word}
         </span>
       </div>
