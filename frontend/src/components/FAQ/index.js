@@ -4,20 +4,22 @@ import Question from '../Question';
 
 const FAQ = () => {
   return (
-    <div className=' FAQ-container'>
-      <div className="max-w-lg mx-auto">
+    <div className='p-4 FAQ-container'>
+      <div className="md:w-3/5 lg:w-1/2 mx-auto">
         <h1 className="text-3xl font-semibold text-center mb-6 pt-6">Frequently Asked Questions</h1>
         <div className="space-y-4 mb-4">
+
           <Question
             question="Do we accept patients without insurance?"
             answer="Yes, you do not need insurance to be seen here. We offer competitive pricing on all our services, ensuring accessibility for uninsured individuals."
           />
 
           <Question
-            question="Do we accept walk in's?"
-            answer="We do accommodate walk-in appointments, although we do have limited availability therefore we highly recommend arriving early in the day or contacting
-           us in advance to secure your spot. We prioritize sick visits, pain, and other urgent considerations"
+            question="What should I bring to my appointment?"
+            answer="Kindly remember to bring along your insurance card and identification, as well as any pertinent documents from recent ER visits and a comprehensive list of your current medications
+            to every appointment."
           />
+
 
           <Question
             question="Do we accept children?"
@@ -34,10 +36,11 @@ const FAQ = () => {
             answer="ask jesse!!!"
           />
 
+
           <Question
-            question="What should I bring to my appointment?"
-            answer="Kindly remember to bring along your insurance card and identification, as well as any pertinent documents from recent ER visits and a comprehensive list of your current medications
-           to every appointment."
+            question="Do we accept walk in's?"
+            answer="We do accommodate walk-in appointments, although we do have limited availability therefore we highly recommend arriving early in the day or contacting
+            us in advance to secure your spot. We prioritize sick visits, pain, and other urgent considerations"
           />
 
           <Question

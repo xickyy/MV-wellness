@@ -27,6 +27,7 @@ const Footer = () => {
               <a className='text-blue-800 custom-footer-number footer-num-2' href='tel:661-947-3300'> (661)-947-3300</a>
             </p>
           </div>
+          <a className='text-blue-800 custom-footer-number-2 footer-num-2' href='tel:661-947-3300'> (661)-947-3300</a>
 
           <div className='flex custom-footer-addy'>
             <i className="mr-2 fa-solid fa-location-dot"></i>
@@ -56,13 +57,13 @@ const Footer = () => {
 
         <div className='w-full md:w-1/4 px-4'>
           <h3 className='text-xl underline text-center mt-6 md:mt-0'>Quick Links:</h3>
-          <div className='flex justify-around md:flex-col md:text-center'>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/about'>About</Link>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/reviews'>Reviews</Link>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/new-patients'>New Patients</Link>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/services'>Services</Link>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/faq'>FAQ</Link>
-            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link' to='/contact'>Contact</Link>
+          <div className='flex flex-wrap text-center justify-center md:flex md:flex-col'>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link pl-2' to='/new-patients'>New Patients</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link pl-2' to='/about'>About</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link pl-2' to='/reviews'>Reviews</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link pl-2' to='/services'>Services</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link pl-2' to='/faq'>FAQ</Link>
+            <Link id="top" onClick={scrollToTop} className='text-blue-800 mt-2 custom-footer-link pl-2' to='/contact'>Contact</Link>
           </div>
         </div>
 

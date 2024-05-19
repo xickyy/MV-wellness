@@ -6,6 +6,7 @@
 
 .custom-footer-addy {
   justify-content: center;
+  margin-top: 10px;
 }
 
 .custom-footer-hours {
@@ -92,7 +93,8 @@
 @media only screen and (min-width: 415px) and (max-width: 767px) {
   .custom-footer-container {
     width: 100%;
-    height: 650px;
+    /* height: 670px; */
+    height: 100%
   }
 
   .footer-logo {
@@ -107,6 +109,27 @@
 @media only screen and (max-width: 415px) {
   .custom-footer-container {
     width: 100%;
-    height: 720px;
+    height: 100%
   }
+}
+
+@media (max-width: 400px) {
+  .custom-footer-number {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .custom-footer-number-2 {
+    display: none;
+  }
+}
+
+.custom-footer-number-2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: -10px;
+}
+
+.custom-footer-number-2:hover {
+  color: rgb(60, 255, 0);
 }
