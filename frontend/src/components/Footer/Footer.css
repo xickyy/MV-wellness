@@ -64,6 +64,10 @@
   box-shadow: black 0px 0px 5px 2px;
 }
 
+.footer-logo:hover {
+  box-shadow: #224dac 0px 0px 5px 2px;
+}
+
 @media screen and (min-width: 416px) and (max-width: 1075px) {
   .footer-logo {
     position: relative;

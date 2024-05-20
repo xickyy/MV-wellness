@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 import homepagevid from './homepagevid.mp4';
 import GoogleMap from '../GoogleMap';
+import infoBg from './homepageBgInfo.mp4';
 
 const Homepage = () => {
 
@@ -33,13 +34,24 @@ const Homepage = () => {
         <p className='text-4xl md:text-6xl mt-6 md:mt-8 pt-2 home-welcome-text home-text-outline'>Welcome!</p>
 
         <span className={`text-xl md:text-4xl mt-12 md:mt-16 pb-2 animated-word home-text-outline ${fadeOut ? 'fade-out' : ''}`}>
-            {word}
+          {word}
         </span>
       </div>
 
       <video className='custom-homepage-video-container' muted autoPlay loop>
         <source src={homepagevid}></source>
       </video>
+
+      <div className=' flex justify-center text-center p-8 home-page-info-container'>
+        <video autoPlay muted loop id="bg-video">
+          <source src={infoBg} ></source>
+        </video>
+        <p className='md:w-1/2 text-lg'>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+          took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+          software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
 
       <div className='google-map-homepage'>
         <GoogleMap />
