@@ -44,7 +44,7 @@
   }
 
   .services-link-title {
-    background-color: #224eacd7;
+    background-color: #224eac;
     border-bottom: black solid 1px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -58,6 +58,7 @@
     padding-bottom: 1px;
   }
 
+
   .service-links {
     box-shadow: black 0px 0px 4px 1px;
     border-bottom-left-radius: 10px;
@@ -70,10 +71,14 @@
   .service-link-wraper {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border: solid black 1px;
-    padding-top: 30px;
+    padding-top: 29px;
+  }
+
+  .service-link-wraper:hover {
+    box-shadow: #224dac 0px 0px 5px 5px;
   }
   /* service link background ids */
 
@@ -178,9 +183,4 @@
  }
 
 
-}
-
-
-.service-links:hover {
-  box-shadow: green 0px 0px 4px 1px;
 }
