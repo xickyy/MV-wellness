@@ -1,7 +1,6 @@
 .stars-img {
   width: 100vw;
-  max-height: 200px;
+  max-height: 300px;
   object-fit: cover;
-  border-bottom: black solid 2px;
   border-top: black solid 2px;
 }

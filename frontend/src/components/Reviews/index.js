@@ -1,7 +1,7 @@
 import './Reviews.css';
 
 import ReviewsApi from '../ReviewsApi';
-import stars from './stars.jpeg'
+import stars from './reviewStars.jpeg'
 
 
 const Reviews = () => {
