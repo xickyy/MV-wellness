@@ -12,7 +12,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   /* Adjust the minmax value as needed */
-  gap: 15px;
+  row-gap: 45px;
+  column-gap: 15px;
   /* Adjust the gap between squares */
   max-width: 1000px;
   /* Adjust the maximum width of the grid */
@@ -22,9 +23,8 @@
   padding-right: 10px;
 }
 
-@media screen and (min-width: 416px) {
+@media screen and (min-width: 431px) {
   .service-links {
-    padding: 20px;
     /* Adjust the padding */
     text-align: center;
     /* Center the content */
@@ -34,15 +34,34 @@
     width: auto;
   }
 
+
   .services-link-title {
     background-color: #224eacd7;
     border: black solid 1px;
-    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     color: white;
     text-decoration: underline;
     box-shadow: black 0px 0px 4px 1px;
+    width: 95%;
+    margin-top: -30px;
+    margin-left: 6px;
+    padding: 0;
+    padding-top: 3px;
+    padding-bottom: 1px;
   }
 
+  .service-links {
+    display: block;
+    width: 100%;
+    border: black solid 1px;
+    box-shadow: black 0px 0px 4px 1px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+  }
   /* service link background ids */
 
 #service-primary-care {
@@ -131,25 +150,21 @@
 
 }
 
-@media screen and (max-width: 416px) {
-  .service-links {
-    padding: 15px;
-    /* Adjust the padding */
-    text-align: center;
-    /* Center the content */
-    text-decoration: none;
-    /* Remove default underline */
-    background-color: #224dac;
-    color: white;
-    font-size: 20px;
-  }
+@media screen and (max-width: 431px) {
+ .service-links {
+   padding: 15px;
+   text-align: center;
+   text-decoration: none;
+   background-color: #224dac;
+   color: white;
+   font-size: 20px;
+ }
+
+ .services-grid-container {
+  row-gap: 15px;
+ }
 }
 
-.service-links {
-  border: black solid 1px;
-  border-radius: 10px;
-  box-shadow: black 0px 0px 4px 1px;
-}
 
 .service-links:hover {
   box-shadow: green 0px 0px 4px 1px;
