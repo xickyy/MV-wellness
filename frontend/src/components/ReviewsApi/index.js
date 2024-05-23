@@ -49,7 +49,7 @@ const ReviewsApi = () => {
   return (
     <div className="md:w-full xl:w-full  p-2 custom-api-review-size">
       <h3 className='text-blue-200 text-3xl underline mb-4 text-center'>Recent Reviews</h3>
-      <ul className='md:max-h-screen xl:max-h-full custom-large-overflow'>
+      <ul className='md:max-h-screen xl:max-h-full custom-large-overflow flex-cols mx-auto md:w-5/6'>
         {reviews.map((review, index) => (
           <li key={index} className="review-api ">
             <div className='flex'>
@@ -58,7 +58,7 @@ const ReviewsApi = () => {
                 Rating: {renderStars(review.rating)}
               </p>
             </div>
-            <p>{review.text}</p>
+            <p className=''>{review.text}</p>
             <div className='flex justify-between'>
               <div>
               </div>
