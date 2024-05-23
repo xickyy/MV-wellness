@@ -42,14 +42,17 @@ const Homepage = () => {
         <source src={homepagevid}></source>
       </video>
 
-      <div className=' flex justify-center text-center p-8 home-page-info-container'>
+      <div className=' flex justify-center text-center p-2 py-6 md:py-12 home-page-info-container'>
         <video autoPlay muted loop id="bg-video">
           <source src={infoBg} ></source>
         </video>
-        <p className='md:w-1/2 text-lg'>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-          took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-          software like Aldus PageMaker including versions of Lorem Ipsum.
+        <p className='lg:w-4/5 text-lg md:text-xl font-bold home-page-text'>Nestled in the heart of our serene mountain community, Mountain View Wellness and Family Medical Corporation. offers personalized, compassionate
+          care for you and your family. Our dedicated team of healthcare professionals is here to provide top-quality medical services, ensuring you stay healthy in a holistic manner,
+          mind, body and soul. At Mountain View Wellness and Family Medical Corporation, we believe in building strong relationships with our patients and the community Our team is committed to providing you with
+          the highest standard of care, from routine check-ups to managing chronic conditions, we are here to support you every step of the way. Furthermore, we understand that life
+          can be busy, so we offer flexible appointment times to fit your schedule needs including walk-in’s. Whether you need an early morning check-up or a late afternoon consultation,
+          we’ve got you covered. Come visit us at Mountain View Wellness and family Medical Corporation, where your health is our top priority! Call us at (661) 947-3300 to schedule an appointment
+          today. We look forward to serving you and your family!
         </p>
       </div>
 
