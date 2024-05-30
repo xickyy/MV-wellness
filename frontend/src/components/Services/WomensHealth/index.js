@@ -4,7 +4,7 @@ import women from './women.jpeg'
 
 const WomensHealth = () => {
     return (
-            <div className='service-background-gradient'>
+        <div className='service-background-gradient'>
 
               <p className='text-center text-4xl pt-8 underline'>Womens health</p>
 
@@ -19,6 +19,8 @@ const WomensHealth = () => {
                 Here at Mountain View Wellness we address conditions that predominantly impact women, often involving female sex hormones, reproductive organs, and other health issues specific to women.
                 We specialize in treating various women’s health conditions, including:
                 </p>
+                
+                <img className='hidden md:block mens-health-img' src={women} alt=''></img>
 
                   <div className='flex justify-around pl-4 md:px-0'>
                     <ul className='list-disc md:ml-24 py-8'>
@@ -37,7 +39,6 @@ const WomensHealth = () => {
                     </ul>
                   </div>
 
-                <img className='hidden md:block mens-health-img' src={women} alt=''></img>
 
                 <img className='md:hidden mens-health-mobile-style' src={women} alt=''></img>
 
@@ -74,7 +75,7 @@ const WomensHealth = () => {
                 </p>
 
 
-                <h2 className='text-center'>At Mountain View Wellness and Family Medical Corporation, we offer comprehensive men's health services, prioritizing your comfort and well-being as we address your health concerns.</h2>
+                <h2 className='text-center'>At Mountain View Wellness and Family Medical Corporation, we offer comprehensive womens's health services, prioritizing your comfort and well-being as we address your health concerns.</h2>
               </div>
             </div>
     );
