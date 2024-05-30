@@ -5,7 +5,7 @@ import Question from '../Question';
 const FAQ = () => {
   return (
     <div className='p-4 FAQ-container'>
-      <div className="md:w-3/5 lg:w-1/2 mx-auto">
+      <div className="md:w-3/5 lg:w-2/5 mx-auto">
         <h1 className="text-3xl font-semibold text-center mb-6 pt-6">Frequently Asked Questions</h1>
         <div className="space-y-4 mb-4">
 
