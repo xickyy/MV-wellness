@@ -18,7 +18,7 @@
 
 
 .about-bg-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -31,7 +31,7 @@
   width: 100vw; /* Set width to cover the entire viewport width */
   height: 100vh; /* Set height to cover the entire viewport height */
   object-fit: cover; /* Stretch the video to cover the entire container, cropping if necessary */
-  opacity: 75%;
+  /* opacity: 75%; */
 }
 
 .profile-card-container {
