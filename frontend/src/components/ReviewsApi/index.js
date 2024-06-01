@@ -11,8 +11,8 @@ const ReviewsApi = () => {
 
     const getData = async () => {
       try {
-        // const response = await csrfFetch('/api/businessProfile/businessProfile');
-        const response = await csrfFetch('http://localhost:8000/api/businessProfile/businessProfile');
+        const response = await csrfFetch('/api/businessProfile/businessProfile');
+        // const response = await csrfFetch('http://localhost:8000/api/businessProfile/businessProfile');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
