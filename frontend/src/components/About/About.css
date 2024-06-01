@@ -28,10 +28,10 @@
 }
 
 .about-background {
-  width: 100vw; /* Set width to cover the entire viewport width */
-  height: 100vh; /* Set height to cover the entire viewport height */
-  object-fit: cover; /* Stretch the video to cover the entire container, cropping if necessary */
-  /* opacity: 75%; */
+  width: 100vw; 
+  height: 100vh;
+  object-fit: cover;
+  opacity: 75%;
 }
 
 .profile-card-container {

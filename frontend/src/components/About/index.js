@@ -11,7 +11,7 @@ const About = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // Set playback speed to 0.5x slower
+      videoRef.current.playbackRate = 0.5;
     }
   }, []);
 
@@ -20,8 +20,8 @@ const About = () => {
     <div className='about-page-container'>
 
       <div className=' about-bg-container'>
-        <video id='myVideo' ref={videoRef} muted autoPlay loop playsinline type="video/mp4" className='about-background'>
-          <source src={bg}></source>
+        <video id='myVideo' ref={videoRef} muted autoPlay loop playsinline type="video/mp4" className='about-background' src={bg}>
+          {/* <source src={bg}></source> */}
         </video>
       </div>
 
