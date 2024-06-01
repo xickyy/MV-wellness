@@ -43,13 +43,13 @@ const Footer = () => {
         <div className='w-full md:w-1/4 px-4 text-center md:flex md:flex-col'>
           <h3 className=' text-xl underline'>Social Links</h3>
           <div className='flex justify-around items-center md:flex-col md:place-content-center'>
-            <a href='https://www.facebook.com/profile.php?id=100053771570764' target='_blank' rel="noreferrer">
+            <a href='google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={facebook} alt=''></img>
             </a>
-            <a href='https://www.instagram.com/tahar_garage_door_repair_' target='_blank' rel="noreferrer">
+            <a href='google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={instagram} alt=''></img>
             </a>
-            <a href='https://www.yelp.com/biz/tahar-garage-door-repair-services-palmdale-2?osq=tahar+garage+door+services&override_cta=Get+pricing+%26+availability' target='_blank' rel="noreferrer">
+            <a href='google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={yelp} alt=''></img>
             </a>
           </div>
