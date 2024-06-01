@@ -85,3 +85,10 @@
 .active {
   border-bottom: #224dac solid 3px;
 }
+
+.phone-menu-button {
+  width: 100px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+}

@@ -33,13 +33,13 @@ const Header = () => {
     // Update active link when location changes
     const links = document.querySelectorAll('.active-nav');
     links.forEach(link => {
-        if (link.getAttribute('href') === location.pathname) {
-            link.classList.add('active')
-        } else {
-          link.classList.remove('active')
-        }
+      if (link.getAttribute('href') === location.pathname) {
+        link.classList.add('active')
+      } else {
+        link.classList.remove('active')
+      }
     });
-}, [location.pathname]);
+  }, [location.pathname]);
 
 
   return (
@@ -94,12 +94,14 @@ const Header = () => {
           </div>
         </div>
 
-        <button
-          className="md:hidden bg-blue-800 h-14 text-white px-2 py-1 rounded-lg toggle-button border border-black"
-          onClick={toggleMobileMenu}
-        >
-          {isMobileMenuOpen ? 'Close' : 'Menu'}
-        </button>
+        <div className="md:hidden bg-blue-800 text-white rounded-lg border border-black phone-menu-button">
+          <button
+            className="text-white"
+            onClick={toggleMobileMenu}
+          >
+            {isMobileMenuOpen ? 'Close' : 'Menu'}
+          </button>
+        </div>
       </div>
 
       {/* Show the mobile menu on screens the size of a mobile device */}

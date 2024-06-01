@@ -20,7 +20,7 @@ const About = () => {
     <div className='about-page-container'>
 
       <div className=' about-bg-container'>
-        <video id='myVideo' ref={videoRef} muted autoPlay loop playsinline className='about-background'>
+        <video id='myVideo' ref={videoRef} muted autoPlay loop playsinline type="video/mp4" className='about-background'>
           <source src={bg}></source>
         </video>
       </div>
