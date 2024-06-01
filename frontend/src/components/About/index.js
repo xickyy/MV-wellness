@@ -39,29 +39,11 @@ const About = () => {
   return (
     <div className='about-page-container'>
 
-      {/* <div className=' about-bg-container'>
-        <video id='myVideo' ref={videoRef} muted autoPlay loop playsinline type="video/mp4" className='about-background'>
+      <div className=' about-bg-container'>
+        <video id='myVideo' ref={videoRef} muted autoPlay loop playsInline type="video/mp4" poster={desert} className='about-background'>
           <source src={bg}></source>
         </video>
-      </div> */}
-
-      <div className='about-bg-container'>
-        <video
-          id='myVideo'
-          ref={videoRef}
-          muted
-          autoPlay
-          loop
-          playsInline
-          type="video/mp4"
-          className='about-background'
-          poster={desert}
-        >
-          <source src={bg} type="video/mp4" />
-        </video>
-        <button ref={playButtonRef} className="play-button">Play Video</button>
       </div>
-
 
       <div className='md:flex justify-around '>
 
