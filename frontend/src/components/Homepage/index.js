@@ -38,12 +38,12 @@ const Homepage = () => {
         </span>
       </div>
 
-      <video className='custom-homepage-video-container' muted autoPlay loop playsinline type="video/mp4">
+      <video className='custom-homepage-video-container' muted autoPlay loop playsInLine type="video/mp4">
         <source src={homepagevid}></source>
       </video>
 
       <div className=' flex justify-center text-center p-2 py-6 md:py-12 home-page-info-container'>
-        <video autoPlay muted loop playsinline id="bg-video" type="video/mp4">
+        <video autoPlay muted loop playsInLine id="bg-video" type="video/mp4">
           <source src={infoBg} ></source>
         </video>
         <p className='lg:w-4/5 text-lg md:text-xl font-bold home-page-text'>Nestled in the heart of our serene mountain community, Mountain View Wellness and Family Medical Corporation offers personalized, compassionate
