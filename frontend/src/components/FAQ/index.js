@@ -26,7 +26,7 @@ const FAQ = () => {
             answer="While pediatric care is not our primary focus, we do accommodate sick visits for children in cases where securing an appointment with their primary pediatrician proves challenging."
           />
 
-          <Question
+          {/* <Question
             question="What insurance do we accept?"
             answer="ask jesse"
           />
@@ -34,7 +34,7 @@ const FAQ = () => {
           <Question
             question="What forms of payment do we accept"
             answer="ask jesse!!!"
-          />
+          /> */}
 
 
           <Question
