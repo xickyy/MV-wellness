@@ -28,7 +28,7 @@
 }
 
 .about-background {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
   opacity: 75%;
@@ -53,4 +53,20 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+
+.play-button {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
 }

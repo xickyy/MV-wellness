@@ -12,6 +12,24 @@ const About = () => {
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.5;
+
+      // Check if the device is iOS
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      if (isIOS) {
+        // Show play button on iOS
+        if (playButtonRef.current) {
+          playButtonRef.current.style.display = 'block';
+        }
+
+        // Add event listener to play video on button click
+        playButtonRef.current.addEventListener('click', () => {
+          videoRef.current.play();
+          playButtonRef.current.style.display = 'none';
+        });
+      } else {
+        // Attempt to autoplay the video on non-iOS devices
+        videoRef.current.play();
+      }
     }
   }, []);
 
@@ -19,10 +37,27 @@ const About = () => {
   return (
     <div className='about-page-container'>
 
-      <div className=' about-bg-container'>
-        <video id='myVideo' ref={videoRef} muted autoPlay loop playsinline type="video/mp4" className='about-background' src={bg}>
-          {/* <source src={bg}></source> */}
+      {/* <div className=' about-bg-container'>
+        <video id='myVideo' ref={videoRef} muted autoPlay loop playsinline type="video/mp4" className='about-background'>
+          <source src={bg}></source>
         </video>
+      </div> */}
+
+      <div className='about-bg-container'>
+        <video
+          id='myVideo'
+          ref={videoRef}
+          muted
+          autoPlay
+          loop
+          playsInline
+          type="video/mp4"
+          className='about-background'
+          poster={doc}
+        >
+          <source src={bg} type="video/mp4" />
+        </video>
+        <button ref={playButtonRef} className="play-button">Play Video</button>
       </div>
 
 
