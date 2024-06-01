@@ -8,6 +8,7 @@ import bg from './images/desertBg.mp4';
 const About = () => {
 
   const videoRef = useRef(null);
+  const playButtonRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
