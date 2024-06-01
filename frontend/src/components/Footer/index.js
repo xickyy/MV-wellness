@@ -43,13 +43,13 @@ const Footer = () => {
         <div className='w-full md:w-1/4 px-4 text-center md:flex md:flex-col'>
           <h3 className=' text-xl underline'>Social Links</h3>
           <div className='flex justify-around items-center md:flex-col md:place-content-center'>
-            <a href='google.com' target='_blank' rel="noreferrer">
+            <a href='https://www.google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={facebook} alt=''></img>
             </a>
-            <a href='google.com' target='_blank' rel="noreferrer">
+            <a href='https://www.google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={instagram} alt=''></img>
             </a>
-            <a href='google.com' target='_blank' rel="noreferrer">
+            <a href='https://www.google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={yelp} alt=''></img>
             </a>
           </div>
