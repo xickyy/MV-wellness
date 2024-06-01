@@ -46,12 +46,12 @@ const Homepage = () => {
         <video autoPlay muted loop playsinline id="bg-video" type="video/mp4">
           <source src={infoBg} ></source>
         </video>
-        <p className='lg:w-4/5 text-lg md:text-xl font-bold home-page-text'>Nestled in the heart of our serene mountain community, Mountain View Wellness and Family Medical Corporation. offers personalized, compassionate
-          care for you and your family. Our dedicated team of healthcare professionals is here to provide top-quality medical services, ensuring you stay healthy in a holistic manner,
-          mind, body and soul. At Mountain View Wellness and Family Medical Corporation, we believe in building strong relationships with our patients and the community Our team is committed to providing you with
-          the highest standard of care, from routine check-ups to managing chronic conditions, we are here to support you every step of the way. Furthermore, we understand that life
+        <p className='lg:w-4/5 text-lg md:text-xl font-bold home-page-text'>Nestled in the heart of our serene mountain community, Mountain View Wellness and Family Medical Corporation offers personalized, compassionate
+          care for you and your family. Our dedicated team of healthcare professionals is here to provide top-quality medical services, ensuring you stay healthy in a holistic manner including
+          mind, body and soul. At Mountain View Wellness and Family Medical Corporation, we believe in building strong relationships with our patients and the community. Our team is committed to providing you with
+          the highest standard of care, from routine check-ups to managing chronic conditions; we are here to support you every step of the way. Furthermore, we understand that life
           can be busy, so we offer flexible appointment times to fit your schedule needs including walk-in’s. Whether you need an early morning check-up or a late afternoon consultation,
-          we’ve got you covered. Come visit us at Mountain View Wellness and family Medical Corporation, where your health is our top priority! Call us at (661) 947-3300 to schedule an appointment
+          we’ve got you covered. Come visit us at Mountain View Wellness and family Medical Corporation, where your health is our top priority! Call us at (661) 878-8170 to schedule an appointment
           today. We look forward to serving you and your family!
         </p>
       </div>

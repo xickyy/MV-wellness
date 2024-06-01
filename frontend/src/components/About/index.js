@@ -4,6 +4,7 @@ import './About.css';
 import doc from './images/theDoctor.jpg';
 import mom from './images/theProvider.jpg';
 import bg from './images/desertBg.mp4';
+import desert from './images/desert.png';
 
 const About = () => {
 
@@ -14,23 +15,23 @@ const About = () => {
     if (videoRef.current) {
       videoRef.current.playbackRate = 0.5;
 
-      // Check if the device is iOS
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      if (isIOS) {
-        // Show play button on iOS
-        if (playButtonRef.current) {
-          playButtonRef.current.style.display = 'block';
-        }
+      // // Check if the device is iOS
+      // const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      // if (isIOS) {
+      //   // Show play button on iOS
+      //   if (playButtonRef.current) {
+      //     playButtonRef.current.style.display = 'block';
+      //   }
 
-        // Add event listener to play video on button click
-        playButtonRef.current.addEventListener('click', () => {
-          videoRef.current.play();
-          playButtonRef.current.style.display = 'none';
-        });
-      } else {
-        // Attempt to autoplay the video on non-iOS devices
-        videoRef.current.play();
-      }
+      //   // Add event listener to play video on button click
+      //   playButtonRef.current.addEventListener('click', () => {
+      //     videoRef.current.play();
+      //     playButtonRef.current.style.display = 'none';
+      //   });
+      // } else {
+      //   // Attempt to autoplay the video on non-iOS devices
+      //   videoRef.current.play();
+      // }
     }
   }, []);
 
@@ -54,7 +55,7 @@ const About = () => {
           playsInline
           type="video/mp4"
           className='about-background'
-          poster={doc}
+          poster={desert}
         >
           <source src={bg} type="video/mp4" />
         </video>
@@ -99,7 +100,7 @@ const About = () => {
                 <p className='md:hidden p-2 doctor-about-text'>Bobbie Tahar, FNP-C, a local native, embarked on her medical career at Antelope Valley College, where she earned her first degree as a Registered Nurse.
                   Driven by a thirst for knowledge, Bobbie pursued her Bachelor's in Nursing at Chamberlain University and her Master's in Nursing at United States University, specializing in
                   family primary care. Now a certified Family Nurse Practitioner (FNP-C), she excels in OB-GYN, aesthetics, and primary care, holding a deep commitment to comprehensive patient well-being.
-                  A dedicated member of The American Association of Nurse Practitioners, Bobbie remains at the forefront of her field's advancements. She is deeply passionate about animal welfare
+                  Bobbie always remains at the forefront of her field's advancements. She is deeply passionate about animal welfare
                   and actively supports ASPCA. Outside of her medical profession, She finds joy in outdoor activities like boating, skiing, dirt bike riding, and horseback riding.
                   However, her greatest joy comes from spending quality time with her family. Bobbie is happily married and is a loving mother of nine children, along with several adopted children who
                   affectionately call her "mom." She is an active member of The American Association of Nurse Practitioners, demonstrating her commitment to staying updated with the latest advancements
@@ -126,7 +127,7 @@ const About = () => {
           <p className='hidden md:block w-6/12 border border-black p-2 center doctor-about-text'>Bobbie Tahar, FNP-C, a local native, embarked on her medical career at Antelope Valley College, where she earned her first degree as a Registered Nurse.
             Driven by a thirst for knowledge, Bobbie pursued her Bachelor's in Nursing at Chamberlain University and her Master's in Nursing at United States University, specializing in
             family primary care. Now a certified Family Nurse Practitioner (FNP-C), she excels in OB-GYN, aesthetics, and primary care, holding a deep commitment to comprehensive patient well-being.
-            A dedicated member of The American Association of Nurse Practitioners, Bobbie remains at the forefront of her field's advancements. She is deeply passionate about animal welfare
+            Bobbie always remains at the forefront of her field's advancements. She is deeply passionate about animal welfare
             and actively supports ASPCA. Outside of her medical profession, She finds joy in outdoor activities like boating, skiing, dirt bike riding, and horseback riding.
             However, her greatest joy comes from spending quality time with her family. Bobbie is happily married and is a loving mother of nine children, along with several adopted children who
             affectionately call her "mom." She is an active member of The American Association of Nurse Practitioners, demonstrating her commitment to staying updated with the latest advancements

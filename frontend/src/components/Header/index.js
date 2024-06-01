@@ -56,9 +56,9 @@ const Header = () => {
         <div>
           <div className='hidden md:flex mb-4 justify-between'>
             <div className='flex flex justify-center custom-header-directions'>
-              <a className='text-blue-800 ml-2 pr-2 custom-footer-number' href='tel:661-947-3300'>
+              <a className='text-blue-800 ml-2 pr-2 custom-footer-number' href='tel:661-878-8170'>
                 <i className="fas fa-phone mr-2 custom-phone-icon text-black"></i>
-                (661)-947-3300
+                (661)-878-8170
               </a>
             </div>
             <div className='custom-header-directions'>

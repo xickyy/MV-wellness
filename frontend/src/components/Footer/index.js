@@ -24,10 +24,10 @@ const Footer = () => {
           <div className='flex mt-2 mb-2 flex justify-center'>
             <i className="fas fa-phone mr-2 custom-phone-icon"></i>
             <p>Call us if you have questions!
-              <a className='text-blue-800 custom-footer-number footer-num-2' href='tel:661-947-3300'> (661)-947-3300</a>
+              <a className='text-blue-800 custom-footer-number footer-num-2' href='tel:661-878-8170'> (661)-878-8170</a>
             </p>
           </div>
-          <a className='text-blue-800 custom-footer-number-2 footer-num-2' href='tel:661-947-3300'> (661)-947-3300</a>
+          <a className='text-blue-800 custom-footer-number-2 footer-num-2' href='tel:661-878-8170'> (661)-878-8170</a>
 
           <div className='flex custom-footer-addy'>
             <i className="mr-2 fa-solid fa-location-dot"></i>
