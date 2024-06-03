@@ -17,6 +17,8 @@ import WomensHealth from './components/Services/WomensHealth';
 import StdScreen from './components/Services/StdScreen';
 import WalkIns from './components/Services/WalkIns';
 import Telehealth from './components/Services/Telehealth';
+import ImmigrationPhysical from './components/Services/ImmigrationPhysical';
+import PregnancyConf from './components/Services/PregnancyConf';
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
           <Route exact path='/services/std-screening' element={<StdScreen />} />
           <Route exact path='/services/walk-ins' element={<WalkIns />} />
           <Route exact path='/services/telehealth' element={<Telehealth />} />
+          <Route exact path='/services/immigration-physical' element={<ImmigrationPhysical />} />
+          <Route exact path='/services/pregnancy' element={<PregnancyConf />} />
 
         </Routes>
 
