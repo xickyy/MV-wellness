@@ -19,6 +19,7 @@ import WalkIns from './components/Services/WalkIns';
 import Telehealth from './components/Services/Telehealth';
 import ImmigrationPhysical from './components/Services/ImmigrationPhysical';
 import PregnancyConf from './components/Services/PregnancyConf';
+import NoInsurance from './components/Services/NoInsurance';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route exact path='/services/telehealth' element={<Telehealth />} />
           <Route exact path='/services/immigration-physical' element={<ImmigrationPhysical />} />
           <Route exact path='/services/pregnancy' element={<PregnancyConf />} />
+          <Route exact path='/services/fee-for-service' element={<NoInsurance />} />
 
         </Routes>
 
