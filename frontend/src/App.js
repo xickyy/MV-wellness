@@ -20,6 +20,10 @@ import Telehealth from './components/Services/Telehealth';
 import ImmigrationPhysical from './components/Services/ImmigrationPhysical';
 import PregnancyConf from './components/Services/PregnancyConf';
 import NoInsurance from './components/Services/NoInsurance';
+import SelectAesthetics from './components/Services/SelectAesthetics';
+import Fpact from './components/Services/Fpact';
+import WeightLoss from './components/Services/WeightLoss';
+import SickVisits from './components/Services/SickVisits';
 
 function App() {
   return (
@@ -46,6 +50,10 @@ function App() {
           <Route exact path='/services/immigration-physical' element={<ImmigrationPhysical />} />
           <Route exact path='/services/pregnancy' element={<PregnancyConf />} />
           <Route exact path='/services/fee-for-service' element={<NoInsurance />} />
+          <Route exact path='/services/select-aesthetics' element={<SelectAesthetics />} />
+          <Route exact path='/services/fpact' element={<Fpact />} />
+          <Route exact path='/services/lipo-c' element={<WeightLoss />} />
+          <Route exact path='/services/sick-visits' element={<SickVisits />} />
 
         </Routes>
 
