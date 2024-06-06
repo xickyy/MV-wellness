@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 import homepagevid from './homepagevid.mp4';
 import GoogleMap from '../GoogleMap';
+import vidPreload from './MV-homepage-preload.png';
 
 const Homepage = () => {
 
@@ -37,7 +38,7 @@ const Homepage = () => {
         </span>
       </div>
 
-      <video className='custom-homepage-video-container' muted autoPlay loop playsInline type="video/mp4">
+      <video className='custom-homepage-video-container' muted autoPlay loop playsInline type="video/mp4" poster ={vidPreload}>
         <source src={homepagevid}></source>
       </video>
 
