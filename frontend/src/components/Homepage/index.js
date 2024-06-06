@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 
 import homepagevid from './homepagevid.mp4';
 import GoogleMap from '../GoogleMap';
-import infoBg from './homepageBgInfo.mp4';
 
 const Homepage = () => {
 
@@ -43,9 +42,9 @@ const Homepage = () => {
       </video>
 
       <div className=' flex justify-center text-center p-2 py-6 md:py-12 home-page-info-container'>
-        <video autoPlay muted loop playsInline id="bg-video" type="video/mp4">
+        {/* <video autoPlay muted loop playsInline id="bg-video" type="video/mp4">
           <source src={infoBg} ></source>
-        </video>
+        </video> */}
         <p className='lg:w-4/5 text-lg md:text-xl font-bold home-page-text'>Nestled in the heart of our serene mountain community, Mountain View Wellness and Family Medical Corporation offers personalized, compassionate
           care for you and your family. Our dedicated team of healthcare professionals is here to provide top-quality medical services, ensuring you stay healthy in a holistic manner including
           mind, body and soul. At Mountain View Wellness and Family Medical Corporation, we believe in building strong relationships with our patients and the community. Our team is committed to providing you with

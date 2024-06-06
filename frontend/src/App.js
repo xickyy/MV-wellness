@@ -24,6 +24,9 @@ import SelectAesthetics from './components/Services/SelectAesthetics';
 import Fpact from './components/Services/Fpact';
 import WeightLoss from './components/Services/WeightLoss';
 import SickVisits from './components/Services/SickVisits';
+import EveryWC from './components/Services/EveryWC';
+import MaleED from './components/Services/MaleED';
+import BirthControl from './components/Services/BirthControl';
 
 function App() {
   return (
@@ -54,6 +57,9 @@ function App() {
           <Route exact path='/services/fpact' element={<Fpact />} />
           <Route exact path='/services/lipo-c' element={<WeightLoss />} />
           <Route exact path='/services/sick-visits' element={<SickVisits />} />
+          <Route exact path='/services/every-woman-counts' element={<EveryWC />} />
+          <Route exact path='/services/male-ed' element={<MaleED />} />
+          <Route exact path='/services/birth-control' element={<BirthControl />} />
 
         </Routes>
 

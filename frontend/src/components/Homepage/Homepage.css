@@ -43,6 +43,7 @@
     border: solid black 3px;
     border-radius: 10px;
     box-shadow: black 0px 0px 10px 3px;
+    background-color: rgb(240, 248, 255);
   }
 }
 
@@ -52,12 +53,16 @@
     border: solid black 3px;
     border-radius: 10px;
     box-shadow: black 0px 0px 4px 1px;
+    background-color: rgb(240, 248, 255);
   }
 }
+
 .home-page-info-container {
-  position: relative;
+  /* position: relative;
   width: 100%;
-  overflow: hidden; /* Hide overflow to ensure the video doesn't cause scrollbars */
+  overflow: hidden; */
+  background-image: url('./desert-about-bg.jpeg');
+  background-size: cover;
 }
 
 /* Ensure the video covers the entire container */
