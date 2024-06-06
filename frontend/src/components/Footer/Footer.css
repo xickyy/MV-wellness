@@ -16,12 +16,14 @@
 .custom-hover-social-img {
   transition: 1s;
   border-radius: 15px;
+
 }
 
 .custom-hover-social-img:hover {
   height: 60px;
   width: 60px;
   box-shadow: green 0px 0px 2px 2px;
+  background-color: #000000;
 }
 
 .custom-footer-number:hover {

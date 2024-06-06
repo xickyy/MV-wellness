@@ -5,6 +5,7 @@ import facebook from './facebook-logo.png';
 import instagram from './instagram-logo.png';
 import yelp from './yelp-logo.png';
 import logo from './M-circle.svg';
+import google from '../Contact/google.png';
 
 const Footer = () => {
 
@@ -43,15 +44,15 @@ const Footer = () => {
         <div className='w-full md:w-1/4 px-4 text-center md:flex md:flex-col'>
           <h3 className=' text-xl underline'>Social Links</h3>
           <div className='flex justify-around items-center md:flex-col md:place-content-center'>
-            <a href='https://www.google.com' target='_blank' rel="noreferrer">
+            {/* <a href='https://www.google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={facebook} alt=''></img>
+            </a> */}
+            <a href='https://www.google.com/maps/place/Mountain+View+Wellness+and+Family+Medical+Corporation/@34.5835745,-118.140039,17z/data=!4m16!1m9!3m8!1s0x80c2593aa5e9ecd5:0xe0bf4e09ace3a629!2sMountain+View+Wellness+and+Family+Medical+Corporation!8m2!3d34.5835745!4d-118.140039!9m1!1b1!16s%2Fg%2F11vz5lv3v6!3m5!1s0x80c2593aa5e9ecd5:0xe0bf4e09ace3a629!8m2!3d34.5835745!4d-118.140039!16s%2Fg%2F11vz5lv3v6?entry=ttu' target='_blank' rel="noreferrer">
+              <img className='w-12 h-12 mt-2 custom-hover-social-img' src={google} alt=''></img>
             </a>
-            <a href='https://www.google.com' target='_blank' rel="noreferrer">
-              <img className='w-12 h-12 mt-2 custom-hover-social-img' src={instagram} alt=''></img>
-            </a>
-            <a href='https://www.google.com' target='_blank' rel="noreferrer">
+            {/* <a href='https://www.google.com' target='_blank' rel="noreferrer">
               <img className='w-12 h-12 mt-2 custom-hover-social-img' src={yelp} alt=''></img>
-            </a>
+            </a> */}
           </div>
         </div>
 
